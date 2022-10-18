@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="from-lang"></select>
+    <select id="to-lang"></select>
+
+    <div class="text-controls">
+        <textarea id="from-text" class="from-text" placeholder="metni girin"></textarea>
+        <textarea id="to-text" class="to-text" placeholder="Ceviri" readonly disabled></textarea>
+    </div>
+    <button id="btnTranslate">Cevir</button>
+    <button disabled class="btn" >temizle</button>
+    <script src="languages.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    .from-text,
+    .to-text{
+        resize: none;
+        height: 250px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    button{
+        background-color: #b34f9a9c;
+        border: none;
+        padding: 25px 30px;
+        margin-top: 25px;
+        color: #fff;
+        font-size: 15px;
+        
+        transition: 0.4s;
+    }
+    button:hover{
+        background-color: white;
+        color:#4d5aa1;
+        border-radius: 15px;
+        font-size: 20px;
+
+}
+
+body{
+    background: #4d5aa1;
+    
+}
+</style>
